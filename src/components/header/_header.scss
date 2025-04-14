@@ -1,0 +1,57 @@
+@use "../../styles/abstracts/variables" as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0 31px;
+
+  &__logo {
+    margin-right: 34px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  &__search {
+    display: flex;
+    flex: 1;
+
+    &-input {
+      margin-right: 40px;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 394px;
+      min-width: 120px;
+      height: $btn-height;
+      padding: 0 19px;
+      border: 1px solid #000;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__visitors {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__visitors-count {
+    span {
+      padding: 0 12px;
+    }
+  }
+
+  &__visitors-present {
+    color: #80bb00;
+  }
+
+  &__visitors-absent {
+    color: #ec5937;
+  }
+}

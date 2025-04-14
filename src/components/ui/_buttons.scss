@@ -1,0 +1,27 @@
+@use "../../styles/abstracts/variables" as *;
+
+.btn {
+  padding: 10px 30px;
+  font-size: 18px;
+  height: $btn-height;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 273px;
+  min-width: 120px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16);
+  color: white;
+  background-color: $primary-color;
+  margin-right: 40px;
+
+  &--green {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &--gray {
+    background-color: $secondary-color;
+    color: white;
+  }
+}

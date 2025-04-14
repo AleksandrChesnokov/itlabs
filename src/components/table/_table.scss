@@ -1,0 +1,66 @@
+main {
+  flex: 1;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0 30px;
+    font-size: 30px;
+
+    thead {
+      font-size: 20px;
+
+      th {
+        border-bottom: 4px solid #e9e9e9;
+        padding: 6px;
+        text-align: left;
+
+        &:last-child {
+          text-align: right;
+          padding: 6px 40px;
+        }
+      }
+      th:nth-child(1) {
+        width: 12%;
+      }
+      th:nth-child(2) {
+        width: 26%;
+      }
+      th:nth-child(3) {
+        width: 20%;
+      }
+    }
+
+    tbody {
+      color: black;
+
+      td {
+        padding: 30px 0;
+        text-align: left;
+
+        &:last-child {
+          display: flex;
+          justify-content: flex-end;
+          padding: 30px 40px;
+        }
+      }
+      tr {
+        cursor: pointer;
+      }
+
+      .circle {
+        width: 59px;
+        height: 59px;
+        border-radius: 50%;
+
+        &.present {
+          background-color: #80bb00;
+        }
+
+        &.absent {
+          background-color: #ec5937;
+        }
+      }
+    }
+  }
+}

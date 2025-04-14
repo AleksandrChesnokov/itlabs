@@ -1,0 +1,25 @@
+.footer {
+  &__content {
+    margin-bottom: 47px;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .filter-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 0 52px;
+  }
+  .active {
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 22px;
+    margin: 0 30px;
+  }
+}

@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+.container {
+  margin: 0 $container-padding;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
